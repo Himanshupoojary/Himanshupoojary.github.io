@@ -1,1 +1,355 @@
-helllo world 
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himanshu Poojary | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['system-ui', 'sans-serif'],
+          },
+          colors: {
+            primary: '#0f172a',   // slate-900
+            accent: '#38bdf8',    // sky-400
+            accentSoft: '#0ea5e9',// sky-500
+          },
+          boxShadow: {
+            soft: '0 18px 45px rgba(15, 23, 42, 0.35)',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-primary text-slate-100 font-sans antialiased">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-30 backdrop-blur bg-primary/70 border-b border-slate-800">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="#home" class="text-lg font-semibold tracking-tight flex items-center gap-2">
+        <span class="h-6 w-6 rounded-full bg-accent flex items-center justify-center text-xs font-bold text-primary">H</span>
+        <span>Himanshu.dev</span>
+      </a>
+      <div class="hidden sm:flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:text-accent transition-colors">About</a>
+        <a href="#skills" class="hover:text-accent transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-accent transition-colors">Projects</a>
+        <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+      </div>
+      <a href="#contact" class="hidden sm:inline-flex text-sm px-4 py-2 rounded-full bg-accent text-primary font-medium hover:bg-accentSoft transition-shadow shadow-soft/40">
+        Let’s talk
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="min-h-[80vh] flex items-center">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 md:gap-16 items-center py-16">
+      <div class="space-y-6">
+        <p class="text-xs uppercase tracking-[0.3em] text-slate-400">Portfolio · Web Developer</p>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
+          Hi, I’m <span class="text-accent">Himanshu Poojary</span><br />
+          I build web products that actually ship.
+        </h1>
+        <p class="text-sm sm:text-base text-slate-300 max-w-xl">
+          CSE undergrad, web developer and entrepreneur. I work with
+          <span class="text-slate-100 font-medium">React, Next.js, Node, MongoDB</span> and care about building
+          fast, clean, and practical solutions—from AI-powered tools to full-stack web apps.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="#projects" class="px-5 py-2.5 rounded-full bg-accent text-primary text-sm font-medium hover:bg-accentSoft shadow-soft/50 transition">
+            View projects
+          </a>
+          <a href="#contact" class="px-5 py-2.5 rounded-full border border-slate-600 text-sm hover:border-accent hover:text-accent transition">
+            Contact me
+          </a>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-4 text-xs text-slate-400">
+          <span class="inline-flex items-center gap-2">
+            <span class="h-2 w-2 rounded-full bg-green-400 animate-pulse"></span>
+            Open for internships & freelance
+          </span>
+          <span class="hidden sm:inline text-slate-600">•</span>
+          <span class="flex gap-3">
+            <!-- Replace # with your actual links -->
+            <a href="#" class="hover:text-accent transition">GitHub</a>
+            <a href="#" class="hover:text-accent transition">LinkedIn</a>
+            <a href="#" class="hover:text-accent transition">LeetCode</a>
+          </span>
+        </div>
+      </div>
+
+      <!-- Right side card -->
+      <div class="relative">
+        <div class="absolute -inset-0.5 bg-gradient-to-tr from-accent/30 via-sky-700/10 to-fuchsia-500/30 rounded-3xl blur-2xl opacity-70"></div>
+        <div class="relative bg-slate-900/80 border border-slate-700 rounded-3xl p-6 sm:p-8 shadow-soft">
+          <p class="text-xs uppercase tracking-[0.25em] text-slate-400 mb-4">Snapshot</p>
+          <ul class="space-y-3 text-sm">
+            <li class="flex justify-between">
+              <span class="text-slate-400">Primary stack</span>
+              <span class="font-medium text-slate-100">React · Next.js · Node</span>
+            </li>
+            <li class="flex justify-between">
+              <span class="text-slate-400">Databases</span>
+              <span class="font-medium text-slate-100">MongoDB · PostgreSQL</span>
+            </li>
+            <li class="flex justify-between">
+              <span class="text-slate-400">Focus</span>
+              <span class="font-medium text-slate-100">Web apps · DSA · Systems</span>
+            </li>
+            <li class="flex justify-between">
+              <span class="text-slate-400">Interests</span>
+              <span class="font-medium text-slate-100">AI · Dev tools · EdTech</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-[1.1fr,0.9fr] gap-10 md:gap-16">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-semibold mb-4">About</h2>
+        <p class="text-sm sm:text-base text-slate-300 mb-4">
+          I’m a Computer Science & Engineering student with a strong focus on web development and problem solving.
+          I’ve worked on projects like an AI-integrated PDF reader, a recipe platform, and a virtual herbal garden
+          web solution using modern JavaScript stacks.
+        </p>
+        <p class="text-sm sm:text-base text-slate-300 mb-4">
+          Outside code, I lift, trek, and play guitar. That mix of discipline, patience and curiosity
+          bleeds directly into how I learn and build. I like shipping real things, not just passing exams.
+        </p>
+        <p class="text-sm sm:text-base text-slate-300">
+          I’m currently deepening my knowledge in DSA, Next.js, backend systems, and building products that are
+          actually useful—fast, robust, and easy to maintain.
+        </p>
+      </div>
+
+      <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-5 sm:p-6 space-y-4">
+        <h3 class="text-base font-semibold">Quick Info</h3>
+        <dl class="text-sm space-y-3">
+          <div class="flex justify-between gap-4">
+            <dt class="text-slate-400">Location</dt>
+            <dd class="text-slate-100 text-right">India</dd>
+          </div>
+          <div class="flex justify-between gap-4">
+            <dt class="text-slate-400">Role</dt>
+            <dd class="text-slate-100 text-right">Student · Web Dev · Entrepreneur</dd>
+          </div>
+          <div class="flex justify-between gap-4">
+            <dt class="text-slate-400">Looking for</dt>
+            <dd class="text-slate-100 text-right">Internships · Collabs · Projects</dd>
+          </div>
+          <div class="flex justify-between gap-4">
+            <dt class="text-slate-400">Email</dt>
+            <dd class="text-slate-100 text-right break-all">youremail@example.com</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between gap-4 mb-8">
+        <h2 class="text-2xl sm:text-3xl font-semibold">Skills</h2>
+        <p class="text-xs sm:text-sm text-slate-400">Not a full list, just the important stuff.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <!-- Skill group -->
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-4 space-y-3">
+          <h3 class="text-sm font-semibold text-slate-100">Frontend</h3>
+          <ul class="text-xs text-slate-300 space-y-1.5">
+            <li>HTML · CSS · JavaScript</li>
+            <li>React · Next.js</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-4 space-y-3">
+          <h3 class="text-sm font-semibold text-slate-100">Backend</h3>
+          <ul class="text-xs text-slate-300 space-y-1.5">
+            <li>Node.js · Express</li>
+            <li>REST APIs</li>
+            <li>Authentication & basic security</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-4 space-y-3">
+          <h3 class="text-sm font-semibold text-slate-100">Databases</h3>
+          <ul class="text-xs text-slate-300 space-y-1.5">
+            <li>MongoDB · Mongoose</li>
+            <li>PostgreSQL (basics)</li>
+            <li>Schema design · queries</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-4 space-y-3">
+          <h3 class="text-sm font-semibold text-slate-100">Other</h3>
+          <ul class="text-xs text-slate-300 space-y-1.5">
+            <li>Git & GitHub</li>
+            <li>DSA (in progress)</li>
+            <li>Linux, basic system thinking</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between gap-4 mb-8">
+        <h2 class="text-2xl sm:text-3xl font-semibold">Projects</h2>
+        <p class="text-xs sm:text-sm text-slate-400">A few things I’ve built or worked on.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <!-- Project 1 -->
+        <article class="bg-slate-900/60 border border-slate-800 rounded-2xl p-5 sm:p-6 flex flex-col justify-between">
+          <div class="space-y-3">
+            <h3 class="text-base sm:text-lg font-semibold">PDF Buddy – AI Integrated PDF Reader</h3>
+            <p class="text-xs sm:text-sm text-slate-300">
+              A web app that lets users upload and read PDFs with an integrated AI chat to query, summarize,
+              and interact with the document in real time.
+            </p>
+            <p class="text-xs text-slate-400">
+              <span class="font-medium text-slate-300">Stack:</span> React · Tailwind CSS · Node · AI API
+            </p>
+          </div>
+          <div class="mt-4 flex items-center justify-between text-xs text-slate-400">
+            <a href="#" class="hover:text-accent transition">View project →</a>
+            <span>Side project</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="bg-slate-900/60 border border-slate-800 rounded-2xl p-5 sm:p-6 flex flex-col justify-between">
+          <div class="space-y-3">
+            <h3 class="text-base sm:text-lg font-semibold">Foodism – Global Recipe Platform</h3>
+            <p class="text-xs sm:text-sm text-slate-300">
+              A full-stack web app that serves recipes from different cuisines worldwide,
+              with EJS views, Express backend and MongoDB database.
+            </p>
+            <p class="text-xs text-slate-400">
+              <span class="font-medium text-slate-300">Stack:</span> Node · Express · EJS · MongoDB
+            </p>
+          </div>
+          <div class="mt-4 flex items-center justify-between text-xs text-slate-400">
+            <a href="#" class="hover:text-accent transition">View project →</a>
+            <span>Academic / hobby</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="bg-slate-900/60 border border-slate-800 rounded-2xl p-5 sm:p-6 flex flex-col justify-between">
+          <div class="space-y-3">
+            <h3 class="text-base sm:text-lg font-semibold">Virtual Herbal Garden (AYUSH)</h3>
+            <p class="text-xs sm:text-sm text-slate-300">
+              A web solution to showcase medicinal plants used in AYUSH with interactive UI, plant details,
+              search & filter, and plans for ML-based plant suggestions and image recognition.
+            </p>
+            <p class="text-xs text-slate-400">
+              <span class="font-medium text-slate-300">Stack:</span> Next.js · MongoDB
+            </p>
+          </div>
+          <div class="mt-4 flex items-center justify-between text-xs text-slate-400">
+            <a href="#" class="hover:text-accent transition">View project →</a>
+            <span>Ongoing</span>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="bg-slate-900/60 border border-slate-800 rounded-2xl p-5 sm:p-6 flex flex-col justify-between">
+          <div class="space-y-3">
+            <h3 class="text-base sm:text-lg font-semibold">Code Practice Interface (LeetCode-style)</h3>
+            <p class="text-xs sm:text-sm text-slate-300">
+              A coding problem interface using React and Monaco Editor, with a local Judge0 instance for
+              multi-language code execution, test cases, and timed problem solving.
+            </p>
+            <p class="text-xs text-slate-400">
+              <span class="font-medium text-slate-300">Stack:</span> React · Monaco · Docker · Judge0
+            </p>
+          </div>
+          <div class="mt-4 flex items-center justify-between text-xs text-slate-400">
+            <a href="#" class="hover:text-accent transition">View project →</a>
+            <span>In progress</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 border-t border-slate-800">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl sm:text-3xl font-semibold mb-4">Contact</h2>
+      <p class="text-sm sm:text-base text-slate-300 mb-8">
+        Want to work together, discuss an idea, or just talk tech and training?
+        Drop a message and I’ll get back as soon as I can.
+      </p>
+
+      <form class="space-y-4 text-left max-w-xl mx-auto">
+        <div>
+          <label class="block text-xs uppercase tracking-wide text-slate-400 mb-1">Name</label>
+          <input
+            type="text"
+            class="w-full rounded-xl bg-slate-900 border border-slate-700 px-3 py-2 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent"
+            placeholder="Your name"
+          />
+        </div>
+        <div>
+          <label class="block text-xs uppercase tracking-wide text-slate-400 mb-1">Email</label>
+          <input
+            type="email"
+            class="w-full rounded-xl bg-slate-900 border border-slate-700 px-3 py-2 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent"
+            placeholder="you@example.com"
+          />
+        </div>
+        <div>
+          <label class="block text-xs uppercase tracking-wide text-slate-400 mb-1">Message</label>
+          <textarea
+            rows="4"
+            class="w-full rounded-xl bg-slate-900 border border-slate-700 px-3 py-2 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent"
+            placeholder="Tell me a bit about what you have in mind…"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="w-full sm:w-auto px-6 py-2.5 rounded-full bg-accent text-primary text-sm font-medium hover:bg-accentSoft shadow-soft/40 transition"
+        >
+          Send message
+        </button>
+      </form>
+
+      <p class="mt-6 text-xs text-slate-500">
+        Or mail me directly at <span class="text-slate-300">youremail@example.com</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 py-6 mt-4">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+      <p>© <span id="year"></span> Himanshu Poojary. All rights reserved.</p>
+      <p>Built with HTML & Tailwind CSS.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
