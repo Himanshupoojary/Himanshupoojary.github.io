@@ -251,94 +251,91 @@
 
   <!-- Projects -->
 <!-- Projects (Branch / Node Layout) -->
+<!-- Projects (Branch / Tree Style) -->
 <section id="projects" class="py-20 border-t border-slate-800">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
     <div class="mb-12">
       <h2 class="text-2xl sm:text-3xl font-semibold">Projects</h2>
       <p class="text-sm text-slate-400 mt-2">
-        A progression of systems I’ve built over time.
+        A branching path of systems I’ve built.
       </p>
     </div>
 
-    <!-- Timeline wrapper -->
-    <div class="relative pl-8">
+    <!-- Branch container -->
+    <div class="relative overflow-x-auto pb-10">
 
-      <!-- Vertical line -->
-      <div class="absolute left-3 top-0 bottom-0 w-px bg-slate-700"></div>
+      <!-- Main trunk -->
+      <div class="relative min-w-[900px] h-64">
 
-      <!-- Node 1 -->
-      <div class="relative mb-12">
-        <span
-          class="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-accent ring-4 ring-primary"></span>
+        <!-- Horizontal trunk line -->
+        <div class="absolute top-32 left-0 right-0 h-px bg-slate-700"></div>
 
-        <div class="ml-6 bg-slate-900/60 border border-slate-800 rounded-2xl p-5">
-          <h3 class="text-base font-semibold">PDF Buddy — AI PDF Reader</h3>
-          <p class="text-sm text-slate-300 mt-2">
-            AI-powered PDF reader with chat-based summarization, explanations,
-            and contextual Q&A over uploaded documents.
-          </p>
-          <p class="text-xs text-slate-400 mt-3">
-            <span class="font-medium">Stack:</span> React · Tailwind · Node.js · AI APIs
-          </p>
-          <p class="text-xs text-slate-500 mt-1">Status: Completed</p>
+        <!-- Node 1 -->
+        <div class="absolute top-32 left-8">
+          <div class="h-3 w-3 rounded-full bg-accent"></div>
+          <div class="mt-4 w-64 bg-slate-900/60 border border-slate-800 rounded-xl p-4">
+            <h3 class="text-sm font-semibold">Foodism</h3>
+            <p class="text-xs text-slate-300 mt-1">
+              Global recipe platform with server-rendered pages.
+            </p>
+            <p class="text-[11px] text-slate-400 mt-2">
+              Node · Express · EJS · MongoDB
+            </p>
+          </div>
         </div>
-      </div>
 
-      <!-- Node 2 -->
-      <div class="relative mb-12">
-        <span
-          class="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-accent ring-4 ring-primary"></span>
-
-        <div class="ml-6 bg-slate-900/60 border border-slate-800 rounded-2xl p-5">
-          <h3 class="text-base font-semibold">Foodism — Global Recipe Platform</h3>
-          <p class="text-sm text-slate-300 mt-2">
-            Full-stack recipe platform showcasing cuisines from different countries
-            using server-side rendering and structured data.
-          </p>
-          <p class="text-xs text-slate-400 mt-3">
-            <span class="font-medium">Stack:</span> Node.js · Express · EJS · MongoDB
-          </p>
-          <p class="text-xs text-slate-500 mt-1">Status: Completed</p>
+        <!-- Node 2 -->
+        <div class="absolute top-32 left-72">
+          <div class="h-3 w-3 rounded-full bg-accent"></div>
+          <div class="mt-4 w-64 bg-slate-900/60 border border-slate-800 rounded-xl p-4">
+            <h3 class="text-sm font-semibold">PDF Buddy</h3>
+            <p class="text-xs text-slate-300 mt-1">
+              AI-based PDF reader with chat interaction.
+            </p>
+            <p class="text-[11px] text-slate-400 mt-2">
+              React · Node · AI APIs
+            </p>
+          </div>
         </div>
-      </div>
 
-      <!-- Node 3 -->
-      <div class="relative mb-12">
-        <span
-          class="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-accent ring-4 ring-primary"></span>
+        <!-- Node 3 (branch up) -->
+        <div class="absolute top-32 left-[520px]">
+          <div class="h-3 w-3 rounded-full bg-accent"></div>
 
-        <div class="ml-6 bg-slate-900/60 border border-slate-800 rounded-2xl p-5">
-          <h3 class="text-base font-semibold">Virtual Herbal Garden (AYUSH)</h3>
-          <p class="text-sm text-slate-300 mt-2">
-            Interactive web platform to explore medicinal plants with search,
-            filters, detailed plant data, and a dedicated gallery.
-          </p>
-          <p class="text-xs text-slate-400 mt-3">
-            <span class="font-medium">Stack:</span> Next.js · MongoDB
-          </p>
-          <p class="text-xs text-slate-500 mt-1">Status: Ongoing</p>
+          <!-- Branch line -->
+          <div class="absolute left-1.5 -top-20 h-20 w-px bg-slate-700"></div>
+
+          <div class="-mt-28 w-64 bg-slate-900/60 border border-slate-800 rounded-xl p-4">
+            <h3 class="text-sm font-semibold">Virtual Herbal Garden</h3>
+            <p class="text-xs text-slate-300 mt-1">
+              Medicinal plant exploration platform (AYUSH).
+            </p>
+            <p class="text-[11px] text-slate-400 mt-2">
+              Next.js · MongoDB
+            </p>
+          </div>
         </div>
-      </div>
 
-      <!-- Node 4 -->
-      <div class="relative">
-        <span
-          class="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-accent ring-4 ring-primary"></span>
+        <!-- Node 4 (branch down) -->
+        <div class="absolute top-32 left-[760px]">
+          <div class="h-3 w-3 rounded-full bg-accent"></div>
 
-        <div class="ml-6 bg-slate-900/60 border border-slate-800 rounded-2xl p-5">
-          <h3 class="text-base font-semibold">Coding Practice Platform</h3>
-          <p class="text-sm text-slate-300 mt-2">
-            LeetCode-style coding platform with Monaco Editor, multi-language support,
-            local Judge0 execution via Docker, and test case evaluation.
-          </p>
-          <p class="text-xs text-slate-400 mt-3">
-            <span class="font-medium">Stack:</span> React · Monaco · Node.js · Docker · Judge0
-          </p>
-          <p class="text-xs text-slate-500 mt-1">Status: In progress</p>
+          <!-- Branch line -->
+          <div class="absolute left-1.5 top-3 h-20 w-px bg-slate-700"></div>
+
+          <div class="mt-24 w-64 bg-slate-900/60 border border-slate-800 rounded-xl p-4">
+            <h3 class="text-sm font-semibold">Coding Practice Platform</h3>
+            <p class="text-xs text-slate-300 mt-1">
+              LeetCode-style platform using Monaco & Judge0.
+            </p>
+            <p class="text-[11px] text-slate-400 mt-2">
+              React · Docker · Judge0
+            </p>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
 </section>
