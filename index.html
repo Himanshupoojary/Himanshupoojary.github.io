@@ -250,101 +250,99 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="py-16 border-t border-slate-800">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Projects (Branch / Node Layout) -->
+<section id="projects" class="py-20 border-t border-slate-800">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <div class="flex items-center justify-between gap-4 mb-8">
-        <h2 class="text-2xl sm:text-3xl font-semibold">Projects</h2>
-        <p class="text-xs sm:text-sm text-slate-400">A few things I’ve built.</p>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
-
-        <!-- Project 1 -->
-        <article class="bg-slate-900/60 border border-slate-800 rounded-2xl p-5 sm:p-6 flex flex-col justify-between">
-          <div class="space-y-3">
-            <h3 class="text-base sm:text-lg font-semibold">PDF Buddy – AI PDF Reader</h3>
-
-            <p class="text-xs sm:text-sm text-slate-300">
-              Web app to upload and read PDFs with integrated AI chat for summarization, explanation, and
-              interaction.
-            </p>
-
-            <p class="text-xs text-slate-400">
-              <span class="font-medium">Stack:</span> React · Tailwind · Node · AI API
-            </p>
-          </div>
-
-          <div class="mt-4 flex items-center justify-between text-xs text-slate-400">
-            <a href="#" class="hover:text-accent transition">View project →</a>
-            <span>Side project</span>
-          </div>
-        </article>
-
-        <!-- Project 2 -->
-        <article class="bg-slate-900/60 border border-slate-800 rounded-2xl p-5 sm:p-6 flex flex-col justify-between">
-          <div class="space-y-3">
-            <h3 class="text-base sm:text-lg font-semibold">Foodism – Global Recipes</h3>
-
-            <p class="text-xs sm:text-sm text-slate-300">
-              Full-stack recipe platform serving global cuisines, built with EJS, Express, and MongoDB.
-            </p>
-
-            <p class="text-xs text-slate-400">
-              <span class="font-medium">Stack:</span> Node · Express · EJS · MongoDB
-            </p>
-          </div>
-
-          <div class="mt-4 flex items-center justify-between text-xs text-slate-400">
-            <a href="#" class="hover:text-accent transition">View project →</a>
-            <span>Academic</span>
-          </div>
-        </article>
-
-        <!-- Project 3 -->
-        <article class="bg-slate-900/60 border border-slate-800 rounded-2xl p-5 sm:p-6 flex flex-col justify-between">
-          <div class="space-y-3">
-            <h3 class="text-base sm:text-lg font-semibold">Virtual Herbal Garden (AYUSH)</h3>
-
-            <p class="text-xs sm:text-sm text-slate-300">
-              Interactive solution to explore medicinal plants with details, search, filters, and upcoming ML-based
-              features.
-            </p>
-
-            <p class="text-xs text-slate-400">
-              <span class="font-medium">Stack:</span> Next.js · MongoDB
-            </p>
-          </div>
-
-          <div class="mt-4 flex items-center justify-between text-xs text-slate-400">
-            <a href="#" class="hover:text-accent transition">View project →</a>
-            <span>Ongoing</span>
-          </div>
-        </article>
-
-        <!-- Project 4 -->
-        <article class="bg-slate-900/60 border border-slate-800 rounded-2xl p-5 sm:p-6 flex flex-col justify-between">
-          <div class="space-y-3">
-            <h3 class="text-base sm:text-lg font-semibold">Code Practice Interface</h3>
-
-            <p class="text-xs sm:text-sm text-slate-300">
-              LeetCode-style coding interface using React, Monaco Editor, and Judge0 for multi-language execution.
-            </p>
-
-            <p class="text-xs text-slate-400">
-              <span class="font-medium">Stack:</span> React · Monaco · Docker · Judge0
-            </p>
-          </div>
-
-          <div class="mt-4 flex items-center justify-between text-xs text-slate-400">
-            <a href="#" class="hover:text-accent transition">View project →</a>
-            <span>In progress</span>
-          </div>
-        </article>
-
-      </div>
+    <div class="mb-12">
+      <h2 class="text-2xl sm:text-3xl font-semibold">Projects</h2>
+      <p class="text-sm text-slate-400 mt-2">
+        A progression of systems I’ve built over time.
+      </p>
     </div>
-  </section>
+
+    <!-- Timeline wrapper -->
+    <div class="relative pl-8">
+
+      <!-- Vertical line -->
+      <div class="absolute left-3 top-0 bottom-0 w-px bg-slate-700"></div>
+
+      <!-- Node 1 -->
+      <div class="relative mb-12">
+        <span
+          class="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-accent ring-4 ring-primary"></span>
+
+        <div class="ml-6 bg-slate-900/60 border border-slate-800 rounded-2xl p-5">
+          <h3 class="text-base font-semibold">PDF Buddy — AI PDF Reader</h3>
+          <p class="text-sm text-slate-300 mt-2">
+            AI-powered PDF reader with chat-based summarization, explanations,
+            and contextual Q&A over uploaded documents.
+          </p>
+          <p class="text-xs text-slate-400 mt-3">
+            <span class="font-medium">Stack:</span> React · Tailwind · Node.js · AI APIs
+          </p>
+          <p class="text-xs text-slate-500 mt-1">Status: Completed</p>
+        </div>
+      </div>
+
+      <!-- Node 2 -->
+      <div class="relative mb-12">
+        <span
+          class="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-accent ring-4 ring-primary"></span>
+
+        <div class="ml-6 bg-slate-900/60 border border-slate-800 rounded-2xl p-5">
+          <h3 class="text-base font-semibold">Foodism — Global Recipe Platform</h3>
+          <p class="text-sm text-slate-300 mt-2">
+            Full-stack recipe platform showcasing cuisines from different countries
+            using server-side rendering and structured data.
+          </p>
+          <p class="text-xs text-slate-400 mt-3">
+            <span class="font-medium">Stack:</span> Node.js · Express · EJS · MongoDB
+          </p>
+          <p class="text-xs text-slate-500 mt-1">Status: Completed</p>
+        </div>
+      </div>
+
+      <!-- Node 3 -->
+      <div class="relative mb-12">
+        <span
+          class="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-accent ring-4 ring-primary"></span>
+
+        <div class="ml-6 bg-slate-900/60 border border-slate-800 rounded-2xl p-5">
+          <h3 class="text-base font-semibold">Virtual Herbal Garden (AYUSH)</h3>
+          <p class="text-sm text-slate-300 mt-2">
+            Interactive web platform to explore medicinal plants with search,
+            filters, detailed plant data, and a dedicated gallery.
+          </p>
+          <p class="text-xs text-slate-400 mt-3">
+            <span class="font-medium">Stack:</span> Next.js · MongoDB
+          </p>
+          <p class="text-xs text-slate-500 mt-1">Status: Ongoing</p>
+        </div>
+      </div>
+
+      <!-- Node 4 -->
+      <div class="relative">
+        <span
+          class="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-accent ring-4 ring-primary"></span>
+
+        <div class="ml-6 bg-slate-900/60 border border-slate-800 rounded-2xl p-5">
+          <h3 class="text-base font-semibold">Coding Practice Platform</h3>
+          <p class="text-sm text-slate-300 mt-2">
+            LeetCode-style coding platform with Monaco Editor, multi-language support,
+            local Judge0 execution via Docker, and test case evaluation.
+          </p>
+          <p class="text-xs text-slate-400 mt-3">
+            <span class="font-medium">Stack:</span> React · Monaco · Node.js · Docker · Judge0
+          </p>
+          <p class="text-xs text-slate-500 mt-1">Status: In progress</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
   <!-- Contact -->
   <section id="contact" class="py-16 border-t border-slate-800">
